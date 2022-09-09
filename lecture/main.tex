@@ -1,0 +1,217 @@
+\documentclass[10pt]{beamer}
+
+\usepackage{lecture-style}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% title info
+\title{Problems of Ethics, {\color{red}{Open Science}} \\ and Open Innovation}
+
+\author{\textbf{Jakub Rydzewski}\\[5pt]
+  \footnotesize{\it NCU Institute of Physics}}
+
+\date{\footnotesize\textcolor{gray}{Updated: \today}}
+
+\begin{document}
+
+% title page
+{\setbeamertemplate{footline}{}\frame{\titlepage}}
+
+\begin{frame}{Course Information}
+\begin{itemize}
+\setlength\itemsep{1em}
+  \item Basic information: \href{https://usosweb.umk.pl/kontroler.php?_action=katalog2\%2Fprzedmioty\%2FpokazPrzedmiot&kod=7404-EONOI&lang=en}{USOS}
+  \item GitHub repository: \url{https://github.com/jakryd/7404-EONOI} \\ 
+    where the lecture and exercise are available.
+  \item Lecture: 30 min + 60 min for the exercise.
+  \item Send questions and remarks to \url{jr@fizyka.umk.pl}.
+  \item (Don't worry about passing).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Outline}
+\textcolor{subtitle}{Open Science}
+\begin{itemize}
+  \item What is Open Science?
+  \item Tools, workflows, methodology
+  \item Licensing
+  \item Example: (Narodowe Centrum Nauki) NCN application
+  \item Exercise
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition}
+\begin{quote}
+  ``Open science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional.''\frefw{\url{https://doi.org/10.1038/nchem.1149}}
+\end{quote}
+\end{frame}
+
+\begin{frame}{Definition}
+  \textcolor{subtitle}{Open scientific research mostly in STEM \\ (Science, technology, engineering, and mathematics)\fref{However, even literature writers use such protocols sometimes.}}
+\begin{itemize}
+  \item Methodology (workflow, protocol, methods)
+  \item Source (software, codes, implementations)
+  \item Data (results)
+  \item Access (for anyone)
+  \item Peer review (verification)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition}
+\textcolor{subtitle}{Advantages:}
+\begin{itemize}
+  \item Free and open access to research reports and data makes peer-review rigorous
+  \item Publicly funded science should be publicly available
+  \item Science is reproducible and transparent
+  \item Lower chance of human error
+  \item High-quality science
+  \item Plagiarism detectable
+  \item More impact
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Tools}
+\textcolor{subtitle}{Available software and data servers:}
+\begin{itemize}
+  \item {\color{red}{Publications}}: Overleaf, Google Docs, GitHub, GitLab
+  \item {\color{red}{Data}}: Zenodo, GitHub, GitLab
+  \item {\color{red}{Software}}: GitHub, GitLab
+  \item {\color{red}{Preprint servers}}: arXiv and its derivatives
+\end{itemize}
+\vspace{0.5cm}
+\textcolor{subtitle}{Each allows for:}
+\begin{itemize}
+  \item Tracking changes
+  \item Versioning
+  \item Collaboration
+  \item Public free access
+  \item Easy licensing
+  \item Obtaining DOI
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Licensing}
+\textcolor{subtitle}{Open access requires licensing:}
+\begin{itemize}
+  \item Allows for retaining copyright (e.g., CC license)
+  \item Access to source and important criteria or usage
+  \item Collaboration
+  \item Free redistribution
+  \item Derived work
+  \item Examples: GPL, LGPL, Mozilla, Apache, BSD, MIT
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Licensing}
+  \includegraphics[width=0.9\textwidth]{fig/rescyc1}
+\end{frame}
+
+\begin{frame}{Licensing}
+  \includegraphics[width=0.9\textwidth]{fig/rescyc2}
+  \frefw{\url{creativecommons.org/2013/09/25/public-access-to-publicly-funded-materials-what-could-be/}}
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+  \begin{itemize}
+    \item NCN supported research must be open access
+    \item Each proposal must contain information about data managment plan
+    \vspace{0.5cm}
+    \item Many journals require processing and open access charges
+    \item Making research available for free can be done also via preprint servers
+    \item Sometimes it is possible to directly import a preprint when submitting work for review
+    \item Often journals highly recommend providing free access to data and protocols
+    \vspace{0.5cm}
+    \item ... collecting processing and open access charges is often exploited by predatory journals 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+  \includegraphics[width=0.9\textwidth]{fig/ncn.png}
+  \frefw{\href{https://www.ncn.gov.pl/sites/default/files/pliki/regulaminy/wytyczne_zarzadzanie_danymi_ang.pdf}{Link: NCN guildlines for data management plan}}
+  \\
+  Let's have a look how specific NCN's data management plan is ...
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+\textcolor{subtitle}{1. Data description and collection or re-use of existing data.}
+  \begin{itemize}
+    \item How will new data be collected or produced and/or how will existing data be re-used?
+    \\
+    {\color{gray}{How do you generate data? Do you use data generated by other research?}}
+    \item What data (for example the types, formats, and volumes) will be collected or produced?
+    \\
+    {\color{gray}{Discipline specific; may be even plain text files or Excel sheets.}}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+\textcolor{subtitle}{2. Documentation and data quality.}
+  \begin{itemize}
+    \item What metadata and documentation (for example methodology or data collection and way of organising data) will accompany data?
+    \\
+    {\color{gray}{Very important: you have to explain what is in your data and how to use it (e.g., README files, code documentation).}}
+    \item What data quality control measures will be used?
+    \\
+    {\color{gray}{Are there any automatic protocols that you can use to ensure that your data is of highest quality? Doing it by hand may be very exhausting and does not exclude human error.}}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+\textcolor{subtitle}{3. Storage and backup during the research process.}
+  \begin{itemize}
+    \item How will data and metadata be stored and backed up during the research process?
+    \\
+    {\color{gray}{Backups, best to use version control server (Zenodo, GitHub)}}
+    \item How will data security and protection of sensitive data be taken care of during the research?
+    \\
+    {\color{gray}{For instance, when dealing with patient records.}}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+\textcolor{subtitle}{4. Legal requirements, codes of conduct.}
+  \begin{itemize}
+    \item If personal data are processed, how will compliance with legislation on personal data and on data security be ensured?
+    \item How will other legal issues, such as intelectual property rights and ownership, be managed? What legislation is applicable?
+    \\
+    {\color{gray}{Licences.}}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+\textcolor{subtitle}{5. Data sharing and long-term preservation.}
+  \begin{itemize}
+    \item How and when will data be shared? Are there possible restrictions to data sharing or embargo reasons?
+    \\
+    {\color{gray}{If freely accessible or partially, upon request.}}
+    \item How will data for preservation be selected, and where will data be preserved long-term (for example a data repository or archive)?
+    \\
+    {\color{gray}{Should be at least 5 years.}}
+    \item What methods or software tools will be needed to access and use the data?
+    \item How will the application of a unique and persistent identifier (such us a Digital Object Identifier (DOI)) to each data set be ensured?
+    \\
+    {\color{gray}{Zenodo, arXiv, publications.}}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: NCN Application}
+\textcolor{subtitle}{6. Data management responsibilities and resources.}
+  \begin{itemize}
+    \item Who (for example role, position, and institution) will be responsible for data mangement (i.e the data steward)?
+    \\
+    {\color{gray}{Do you manage your data yourself or is there someone who does it for you?}}
+    \item What resources (for example financial and time) will be dedicated to data management and ensuring the data will be FAIR (Findable, Accessible, Interoperable, Re-usable)?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise}
+\textcolor{subtitle}{Provide an answer to each point above.}
+  \begin{itemize}
+    \item For each question up to 3 sentences
+    \item Must be discipline specific (different requirements for, e.g., mathematics and biology)
+    \item Write your answers in a \textbf{plain text file}
+    \item Send the file to \url{jr@fizyka.umk.pl}
+  \end{itemize}
+\end{frame}
+
+\end{document}
